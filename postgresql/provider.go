@@ -100,7 +100,7 @@ func Provider() terraform.ResourceProvider {
 		},
 
 		ResourcesMap: map[string]*schema.Resource{
-			"postgresql_role":               resourcePostgreSQLRole(),
+			"postgresql_script": resourcePostgreSQLScript(),
 		},
 
 		ConfigureFunc: providerConfigure,
